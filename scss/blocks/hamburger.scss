@@ -1,0 +1,14 @@
+.hamburger{
+    width: 16px;
+    height: 15px;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.hamburger__closed{
+    background-image: url(../img/burger.png);
+}
+.hamburger__opened{
+    background-image: url(../img/x.png);
+}

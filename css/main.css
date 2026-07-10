@@ -1,0 +1,99 @@
+ol, ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* fraunces-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/fraunces-v38-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/barlow-v13-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/barlow-v13-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+.header {
+  position: relative;
+  padding: 43px 0;
+}
+
+.header__container {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  gap: 33px;
+}
+
+.nav__item-link {
+  text-transform: uppercase;
+  font-family: "Barlow";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.92px;
+  color: #83888F;
+}
+.nav__item-link:hover {
+  color: #333D4B;
+}
+
+.nav__mobile {
+  position: absolute;
+  top: -100%;
+}
+
+@media only screen and (max-width: 615px) {
+  .nav {
+    display: none;
+  }
+  .nav__mobile-active {
+    top: 90px;
+  }
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 85px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+.hamburger {
+  width: 16px;
+  height: 15px;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.hamburger__closed {
+  background-image: url(../img/burger.png);
+}
+
+.hamburger__opened {
+  background-image: url(../img/x.png);
+}/*# sourceMappingURL=main.css.map */

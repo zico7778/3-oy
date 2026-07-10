@@ -1,0 +1,29 @@
+.nav__list{
+    display: flex;
+    gap: 33px;
+}
+.nav__item-link {
+    text-transform: uppercase;
+    font-family: "Barlow";
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.92px;
+    color: $gray;
+    &:hover{
+        color: $dark-gray-blue;
+    }
+}
+.nav__mobile{
+    position: absolute;
+    top: -100%;
+}
+
+@media only screen and (max-width:615px){
+    .nav{
+        display: none;
+    }
+    .nav__mobile-active{
+        top: 90px;
+    }
+}
